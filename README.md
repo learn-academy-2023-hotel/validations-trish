@@ -1,24 +1,6 @@
-# README
+<!-- Failures:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  1) Animal is not valid without a name
+     Failure/Error: expect(cat.errors[:name]).to_not be_empty
+       expected `[].empty?` to be falsey, got true
+     # ./spec/models/animal_spec.rb:11:in `block (2 levels) in <top (required)>' -->
